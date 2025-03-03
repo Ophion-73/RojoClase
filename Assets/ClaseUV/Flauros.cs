@@ -33,18 +33,13 @@ public class ThreeFacePyramid : MonoBehaviour
         };
 
         // UVs: simple mapping for each vertex
-        Vector2[] uv = {
-            new Vector2(0.5f, 1),   // Apex
-            new Vector2(0, 0),      // Base vertex 1
-            new Vector2(1, 0),      // Base vertex 2
-            new Vector2(0.5f, 0)    // Base vertex 3
-        };
+      
 
         // Create the Mesh
         Mesh mesh = new Mesh();
         mesh.vertices = vertices;
         mesh.triangles = triangles;
-        mesh.uv = uv;
+        
 
         // Calculate normals for lighting
         mesh.RecalculateNormals();
